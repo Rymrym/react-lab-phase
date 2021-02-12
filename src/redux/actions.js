@@ -12,6 +12,14 @@ export const deleteOrder = (order)=>{
     payload : order
     })
 }
+
+export const UPDATE_ORDER = 'UPDATE_ORDER'
+export const updateOrder = (order)=>{
+    return ({
+    type : UPDATE_ORDER,
+    payload : order
+    })
+}
 export const SEARCH_PRODUCT = 'SEARCH_PRODUCT'
 export const searchProduct = (productTitle)=>{
     return ({
@@ -19,10 +27,11 @@ export const searchProduct = (productTitle)=>{
     payload : productTitle
     })
 }
-export const SET_PRODUCT = 'SET_PRODUCT'
-export const setProduct = (productId)=>{
+
+export const SET_CLICKED = 'SET_CLICKED'
+export const setClicked = (click)=>{
     return ({
-    type : SET_PRODUCT,
-    payload : productId
+    type : SET_CLICKED,
+    payload : click
     })
 }

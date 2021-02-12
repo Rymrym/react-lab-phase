@@ -1,4 +1,4 @@
 import {createStore, combineReducers} from 'redux';
-import {reducerOrders, reducerProduct} from './reducer';
+import {reducerOrders, reducerProduct, reducerClicked} from './reducer';
 
-export let store = createStore(combineReducers({reducerOrders, reducerProduct}))
+export let store = createStore(combineReducers({reducerOrders, reducerProduct, reducerClicked}))
